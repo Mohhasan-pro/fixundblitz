@@ -62,12 +62,12 @@ export default function Datenschutz() {
                         <h3 className="text-xl font-semibold text-brand-gold mb-3">Hinweis zur verantwortlichen Stelle</h3>
                         <p className="mb-2">Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
                         <div className="bg-brand-black border border-brand-gold/20 rounded-lg p-4 my-4">
-                            <p className="text-brand-gold">[FIRMENNAME]</p>
-                            <p>[Vor- und Nachname]</p>
-                            <p>[Straße und Hausnummer]</p>
-                            <p>[PLZ] [Ort]</p>
-                            <p className="mt-2">Telefon: [TELEFONNUMMER]</p>
-                            <p>E-Mail: [E-MAIL-ADRESSE]</p>
+                            <p className="text-brand-gold">Fix & Blitz</p>
+                            <p>Mohammad Hasan</p>
+                            <p>Ruwestr. 2</p>
+                            <p>49084 Osnabrück</p>
+                            <p className="mt-2">Telefon: 015781513109</p>
+                            <p>E-Mail: info@fixundblitz.de</p>
                         </div>
                     </section>
 
