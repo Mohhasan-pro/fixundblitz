@@ -1,13 +1,20 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: NextRequest) {
     try {
+        const apiKey = process.env.RESEND_API_KEY;
+        if (!apiKey) {
+            console.error("RESEND_API_KEY ist nicht gesetzt.");
+            return NextResponse.json(
+                { error: "Der E-Mail-Versand ist derzeit nicht eingerichtet." },
+                { status: 500 }
+            );
+        }
+        const resend = new Resend(apiKey);
+
         const { name, email, subject, message } = await req.json();
 
-        // Basic server-side validation
         if (!name || !email || !message) {
             return NextResponse.json(
                 { error: "Bitte füllen Sie alle Pflichtfelder aus." },
@@ -24,7 +31,6 @@ export async function POST(req: NextRequest) {
         }
 
         const { error } = await resend.emails.send({
-            // Must be an address on a domain verified in Resend
             from: "FIX & BLITZ Kontaktformular <info@fixundblitz.de>",
             to: ["info@fixundblitz.de"],
             replyTo: email,
