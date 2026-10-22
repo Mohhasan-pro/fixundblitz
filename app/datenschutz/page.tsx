@@ -143,31 +143,6 @@ export default function Datenschutz() {
                             Adresszeile des Browsers von „http://&quot; auf „https://&quot; wechselt.
                         </p>
                     </section>
-
-                    <section className="border-t border-brand-gold/20 pt-6 mt-8">
-                        <div className="bg-yellow-900/20 border border-yellow-600/30 rounded-lg p-4">
-                            <p className="text-sm text-yellow-200">
-                                <strong>⚠️ Wichtiger Hinweis:</strong> Dies ist eine Vorlage! Bitte ersetzen Sie alle
-                                Platzhalter in [ECKIGEN KLAMMERN] mit Ihren tatsächlichen Daten. Ergänzen Sie weitere
-                                Dienste, die Sie nutzen (z.B. Google Analytics, Facebook Pixel, etc.). Lassen Sie die
-                                Datenschutzerklärung unbedingt von einem Anwalt prüfen!
-                            </p>
-                            <p className="text-sm text-yellow-200 mt-2">
-                                Empfohlene Generatoren:{" "}
-                                <a href="https://www.e-recht24.de" target="_blank" className="underline">eRecht24</a> oder{" "}
-                                <a href="https://datenschutz-generator.de" target="_blank" className="underline">Datenschutz-Generator.de</a>
-                            </p>
-                        </div>
-                    </section>
-
-                    <div className="mt-8 text-center">
-                        <Link
-                            href="/"
-                            className="inline-block px-6 py-3 bg-brand-gold text-brand-black font-bold rounded-lg hover:bg-yellow-400 transition-colors"
-                        >
-                            Zurück zur Startseite
-                        </Link>
-                    </div>
                 </div>
             </div>
         </div>
