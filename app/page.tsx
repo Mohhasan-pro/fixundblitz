@@ -14,7 +14,7 @@ export default function Home() {
         "Beetpflege & Bepflanzung",
       ],
       image: "/images/services/gartenpflege.webp",
-      link: "/leistungen/gartenpflege",
+      link: "/leistungen/kontakt",
     },
     {
       title: "Reinigung",
@@ -25,7 +25,7 @@ export default function Home() {
         "Treppenhausreinigung",
         "Büro- & Praxisreinigung",
       ],
-      link: "/leistungen/reinigung",
+      link: "/leistungen/kontakt",
       image: "/images/services/Reinigung.webp",
     },
     {
@@ -37,7 +37,7 @@ export default function Home() {
         "Kurierfahrten",
         "Möbelmontage",
       ],
-      link: "/leistungen/transport",
+      link: "/leistungen/kontakt",
       image: "/images/services/Transport.webp",
     },
     {
@@ -49,7 +49,7 @@ export default function Home() {
         "Sperrmüllentsorgung",
         "Messie-Wohnungen",
       ],
-      link: "/leistungen/entruempelung",
+      link: "/leistungen/kontakt",
       image: "/images/services/Entruempelung.webp",
     },
   ];
