@@ -37,17 +37,17 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/leistungen/reinigung" className="text-brand-white/70 hover:text-brand-gold text-sm">
+                <Link href="#" className="text-brand-white/70 hover:text-brand-gold text-sm">
                   Reinigung
                 </Link>
               </li>
               <li>
-                <Link href="/leistungen/transport" className="text-brand-white/70 hover:text-brand-gold text-sm">
+                <Link href="#" className="text-brand-white/70 hover:text-brand-gold text-sm">
                   Transport & Umzüge
                 </Link>
               </li>
               <li>
-                <Link href="/leistungen/entruempelung" className="text-brand-white/70 hover:text-brand-gold text-sm">
+                <Link href="#" className="text-brand-white/70 hover:text-brand-gold text-sm">
                   Entrümpelung
                 </Link>
               </li>
