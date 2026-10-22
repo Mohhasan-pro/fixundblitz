@@ -32,22 +32,22 @@ export default function Footer() {
             <h3 className="text-brand-gold font-bold mb-4">Leistungen</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-brand-white/70 hover:text-brand-gold text-sm">
+                <Link href="/kontakt" className="text-brand-white/70 hover:text-brand-gold text-sm">
                   Gartenpflege
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-brand-white/70 hover:text-brand-gold text-sm">
+                <Link href="/kontakt" className="text-brand-white/70 hover:text-brand-gold text-sm">
                   Reinigung
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-brand-white/70 hover:text-brand-gold text-sm">
+                <Link href="/kontakt" className="text-brand-white/70 hover:text-brand-gold text-sm">
                   Transport & Umzüge
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-brand-white/70 hover:text-brand-gold text-sm">
+                <Link href="/kontakt" className="text-brand-white/70 hover:text-brand-gold text-sm">
                   Entrümpelung
                 </Link>
               </li>
