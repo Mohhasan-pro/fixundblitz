@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   const services = [
@@ -14,7 +13,7 @@ export default function Home() {
         "Beetpflege & Bepflanzung",
       ],
       image: "/images/services/gartenpflege.webp",
-      link: "/leistungen/kontakt",
+      link: "/kontakt",
     },
     {
       title: "Reinigung",
@@ -25,7 +24,7 @@ export default function Home() {
         "Treppenhausreinigung",
         "Büro- & Praxisreinigung",
       ],
-      link: "/leistungen/kontakt",
+      link: "/kontakt",
       image: "/images/services/Reinigung.webp",
     },
     {
@@ -37,7 +36,7 @@ export default function Home() {
         "Kurierfahrten",
         "Möbelmontage",
       ],
-      link: "/leistungen/kontakt",
+      link: "/kontakt",
       image: "/images/services/Transport.webp",
     },
     {
@@ -49,7 +48,7 @@ export default function Home() {
         "Sperrmüllentsorgung",
         "Messie-Wohnungen",
       ],
-      link: "/leistungen/kontakt",
+      link: "/kontakt",
       image: "/images/services/Entruempelung.webp",
     },
   ];
@@ -59,13 +58,6 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative py-2 flex items-center justify-center bg-brand-black overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
-            src="/hero-bg.jpg"
-            alt="Gartenpflege und Reinigung in Osnabrück"
-            fill
-            className="object-cover opacity-40"
-            priority
-          />
           <div className="absolute inset-0 bg-gradient-to-b from-brand-black/80 via-brand-black/50 to-brand-black"></div>
         </div>
         <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
@@ -257,7 +249,7 @@ export default function Home() {
               Kostenloses Angebot anfordern
             </Link>
             <a
-              href="tel:+4915123456789"
+              href="tel:+4915781513109"
               className="px-8 py-4 border border-brand-white/30 text-brand-white text-lg font-bold rounded-lg hover:bg-brand-white/10 transition-colors"
             >
               Direkt anrufen
