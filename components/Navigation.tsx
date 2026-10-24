@@ -43,7 +43,7 @@ export default function Navigation() {
 
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="tel:+4915123456789"
+              href="tel:+4915781513109"
               className="hidden md:block bg-brand-gold text-brand-black px-6 py-2 rounded-lg font-bold hover:bg-yellow-400">
               Jetzt anrufen
             </a>
