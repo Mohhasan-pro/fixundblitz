@@ -36,7 +36,7 @@ export default function Navigation() {
 
           <div className="hidden md:flex space-x-8">
             <Link href="/" className={getLinkClass("/")}>Startseite</Link>
-            <Link href="/galerie" className={getLinkClass("/galerie")}>Galerie</Link>
+            
             <Link href="/bewertungen" className={getLinkClass("/bewertungen")}>Bewertungen</Link>
             <Link href="/kontakt" className={getLinkClass("/kontakt")}>Kontakt</Link>
           </div>
@@ -62,7 +62,7 @@ export default function Navigation() {
         {menuOpen && (
           <div className="md:hidden pb-4 space-y-2">
             <Link href="/" className={getMobileLinkClass("/")}>Startseite</Link>
-            <Link href="/galerie" className={getMobileLinkClass("/galerie")}>Galerie</Link>
+           
             <Link href="/bewertungen" className={getMobileLinkClass("/bewertungen")}>Bewertungen</Link>
             <Link href="/kontakt" className={getMobileLinkClass("/kontakt")}>Kontakt</Link>
           </div>
