@@ -58,11 +58,7 @@ export default function Footer() {
           <div>
             <h3 className="text-brand-gold font-bold mb-4">Schnelllinks</h3>
             <ul className="space-y-2">
-              <li>
-                <Link href="/galerie" className="text-brand-white/70 hover:text-brand-gold text-sm">
-                  Galerie
-                </Link>
-              </li>
+
               <li>
                 <Link href="/bewertungen" className="text-brand-white/70 hover:text-brand-gold text-sm">
                   Bewertungen
