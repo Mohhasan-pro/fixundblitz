@@ -40,7 +40,7 @@ export default function Bewertungen() {
                     </p>
 
                     <a
-                        href="HIER_IHREN_GOOGLE_LINK_EINFUEGEN"
+                        href="https://g.page/r/CVjopo4Tcp-0EAE/review"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-brand-gold text-brand-black font-bold text-lg px-8 py-4 rounded-lg hover:bg-yellow-400 transition-colors shadow-[0_0_20px_-5px_var(--color-brand-gold)]"
