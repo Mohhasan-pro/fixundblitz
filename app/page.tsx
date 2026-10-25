@@ -142,37 +142,7 @@ export default function Home() {
       </section>
 
       {/* Story Section */}
-      <section className="py-10 bg-brand-black border-t border-brand-gold/20">
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-          {/* Bild */}
-          <div className="flex justify-center">
-            <Image
-              src="/images/maskottchen-half.png"
-              alt="FIX & BLITZ Maskottchen"
-              width={350}
-              height={400}
-              className="w-auto h-auto"
-            />
-          </div>
-
-          {/* Text */}
-          <div>
-            <h2 className="text-3xl font-bold text-brand-white mb-6">
-              Unsere <span className="text-brand-gold">Geschichte</span>
-            </h2>
-            <p className="text-brand-white/80 mb-4">
-              FIX & BLITZ wurde mit einer einfachen Mission gegründet: Menschen in Osnabrück und Umgebung bei den Aufgaben zu helfen, für die im Alltag oft die Zeit fehlt.
-            </p>
-            <p className="text-brand-white/80 mb-4">
-              Ob ein verwilderter Garten, ein vollgestellter Keller oder ein anstehender Umzug – wir packen dort an, wo Sie Unterstützung brauchen. Schnell, zuverlässig und zu fairen Preisen.
-            </p>
-            <p className="text-brand-white/80">
-              Unser Motto <span className="text-brand-gold font-bold">&quot;Das Ende des Chaos&quot;</span> ist dabei Programm: Wir bringen Ordnung in Ihr Zuhause und Ihren Alltag.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Werte Section */}
       <section className="py-10 bg-brand-black border-t border-brand-gold/20">
