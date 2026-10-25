@@ -183,24 +183,7 @@ export default function Home() {
       </section>
 
       {/* Warum wir Section */}
-      <section className="py-10 bg-brand-black border-t border-brand-gold/20 relative">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
-          <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-brand-gold">
-              Die Geschichte von FIX & BLITZ
-            </h2>
-            <h3 className="text-xl text-brand-white/90 font-semibold mb-6">
-              &quot;Qualität ist kein Zufall, sondern das Ergebnis von harter Arbeit.&quot;
-            </h3>
-            <p className="text-brand-white/70 mb-6 leading-relaxed">
-              Gegründet mit der Vision, Dienstleistungen nicht nur anzubieten, sondern zu perfektionieren. Was als kleines Ein-Mann-Unternehmen begann, ist heute ein vertrauenswürdiger Partner für hunderte Kunden in Osnabrück.
-            </p>
-            <p className="text-brand-white/70 mb-8 leading-relaxed">
-              Wir glauben daran, dass jeder Garten, jedes Haus und jedes Projekt die volle Aufmerksamkeit verdient. Deshalb setzen wir auf modernstes Equipment und geschultes Personal.
-            </p>
-          </div>
-        </div>
-      </section>
+
 
       {/* CTA Section */}
       <section className="py-10 bg-brand-black border-t border-brand-gold/20">
