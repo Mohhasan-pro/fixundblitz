@@ -59,11 +59,6 @@ export default function Footer() {
             <h3 className="text-brand-gold font-bold mb-4">Schnelllinks</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/ueber-uns" className="text-brand-white/70 hover:text-brand-gold text-sm">
-                  Über uns
-                </Link>
-              </li>
-              <li>
                 <Link href="/galerie" className="text-brand-white/70 hover:text-brand-gold text-sm">
                   Galerie
                 </Link>
