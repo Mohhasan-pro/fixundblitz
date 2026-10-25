@@ -1,6 +1,5 @@
 import Script from "next/script";
 import { Metadata } from "next";
-import FeedbackForm from "@/components/FeedbackForm";
 
 export const metadata: Metadata = {
     title: "Bewertungen | FIX & BLITZ",
@@ -30,17 +29,24 @@ export default function Bewertungen() {
                 </div>
             </section>
 
-            {/* Feedback-Formular Bereich */}
-            <section id="feedback-form" className="py-20 bg-brand-black border-t border-brand-gold/20">
-                <div className="max-w-4xl mx-auto px-4 text-center">
-                    <h2 className="text-3xl font-bold text-brand-white mb-4">
-                        Waren Sie auch zufrieden?
+            {/* Direkter Google-Bewertungsaufruf statt E-Mail-Formular */}
+            <section className="py-20 bg-brand-black border-t border-brand-gold/20">
+                <div className="max-w-3xl mx-auto px-4 text-center">
+                    <h2 className="text-3xl md:text-4xl font-bold text-brand-white mb-4">
+                        Waren Sie auch <span className="text-brand-gold">zufrieden?</span>
                     </h2>
-                    <p className="text-brand-white/80 text-lg mb-12">
-                        Wir freuen uns über jedes Feedback! Bewerten Sie uns direkt hier.
+                    <p className="text-brand-white/80 text-lg mb-8">
+                        Unterstützen Sie uns mit einer kurzen Bewertung auf Google. Ihr Feedback hilft uns und anderen Kunden!
                     </p>
 
-                    <FeedbackForm />
+                    <a
+                        href="HIER_IHREN_GOOGLE_LINK_EINFUEGEN"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-brand-gold text-brand-black font-bold text-lg px-8 py-4 rounded-lg hover:bg-yellow-400 transition-colors shadow-[0_0_20px_-5px_var(--color-brand-gold)]"
+                    >
+                        <span>⭐</span> Jetzt auf Google bewerten
+                    </a>
                 </div>
             </section>
         </>
