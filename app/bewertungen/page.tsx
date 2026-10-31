@@ -24,8 +24,8 @@ export default function Bewertungen() {
             {/* Elfsight Google Reviews Widget */}
             <section className="py-20 bg-zinc-900">
                 <div className="max-w-7xl mx-auto px-4">
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-3d6594a3-d59c-402e-b124-55fc75d4a40a" data-elfsight-app-lazy></div>
+                    <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
+                    <div className="elfsight-app-335f5da4-f875-467a-96cb-31dd1e7fd290" data-elfsight-app-lazy></div>
                 </div>
             </section>
 
