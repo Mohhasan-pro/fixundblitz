@@ -64,25 +64,45 @@ export default function Home() {
 
           {/* Text */}
           <div>
+            {/* Google Trust Badge */}
+            <Link
+              href="/bewertungen"
+              className="inline-flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/30 rounded-full px-4 py-1.5 mb-6 text-sm text-brand-gold hover:bg-brand-gold/20 transition-colors"
+            >
+              <span className="text-brand-gold tracking-wider">★★★★★</span>
+              <span className="text-brand-white font-semibold">5.0 auf Google</span>
+              <span className="text-brand-white/40">•</span>
+              <span className="text-brand-white/80 hover:text-brand-gold text-xs">Bewertungen ansehen →</span>
+            </Link>
+
             <h1 className="text-4xl md:text-6xl font-bold text-brand-white mb-6">
               Das Ende des <span className="text-brand-gold">Chaos</span>
             </h1>
             <p className="text-xl text-brand-white/80 mb-8">
               Ihr zuverlässiger Partner für Gartenpflege, Reinigung, Transport und Entrümpelung in Osnabrück und Umgebung.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-
-              <a href="tel:+4915781513109"
-                className="bg-brand-gold text-brand-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 text-center" >
+            <div className="flex flex-col sm:flex-row gap-4 mb-4">
+              <a
+                href="tel:+4915781513109"
+                className="bg-brand-gold text-brand-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 text-center transition-colors shadow-[0_0_20px_-5px_var(--color-brand-gold)]"
+              >
                 Jetzt anrufen
               </a>
               <Link
                 href="/kontakt"
-                className="border-2 border-brand-gold text-brand-gold px-8 py-4 rounded-lg font-bold text-lg hover:bg-brand-gold hover:text-brand-black text-center"
+                className="border-2 border-brand-gold text-brand-gold px-8 py-4 rounded-lg font-bold text-lg hover:bg-brand-gold hover:text-brand-black text-center transition-colors"
               >
                 Kostenloses Angebot
               </Link>
             </div>
+            <a
+              href="https://wa.me/4915781513109?text=Hallo%20FIX%20%26%20BLITZ,%20ich%20interessiere%20mich%20f%C3%BCr%20ein%20Angebot."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-[#25D366] hover:underline pt-2"
+            >
+              <span>💬</span> Fotos per WhatsApp senden für eine schnelle Ersteinschätzung →
+            </a>
           </div>
 
           {/* Maskottchen */}
@@ -93,13 +113,14 @@ export default function Home() {
               width={400}
               height={500}
               className="w-auto h-auto max-h-[500px]"
+              priority
             />
           </div>
         </div>
       </section>
 
       {/* Leistungen Section */}
-      <section className="py-10 bg-brand-black border-t border-brand-gold/20">
+      <section className="py-12 bg-brand-black border-t border-brand-gold/20">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-brand-gold uppercase tracking-wider">
             Unsere Leistungen
@@ -107,33 +128,47 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service) => (
-              <div key={service.title} className="group relative bg-brand-black rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300 border border-brand-gold/10 hover:border-brand-gold/40">
-                <div className="relative h-64 overflow-hidden">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent"></div>
+              <div
+                key={service.title}
+                className="group relative bg-brand-black rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300 border border-brand-gold/10 hover:border-brand-gold/40 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="relative h-64 overflow-hidden">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent"></div>
 
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-xl font-bold text-brand-white">
-                      {service.title}
-                    </h3>
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <h3 className="text-xl font-bold text-brand-white">
+                        {service.title}
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div className="p-6 relative pb-2">
+                    <p className="text-brand-white/70 mb-6 min-h-[50px]">{service.desc}</p>
+                    <ul className="space-y-2 mb-4">
+                      {service.features.map((feature, i) => (
+                        <li key={i} className="flex items-center text-sm text-brand-white/60">
+                          <span className="w-1.5 h-1.5 bg-brand-gold rounded-full mr-2"></span>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
 
-                <div className="p-6 relative">
-                  <p className="text-brand-white/70 mb-6 min-h-[50px]">{service.desc}</p>
-                  <ul className="space-y-2 mb-6">
-                    {service.features.map((feature, i) => (
-                      <li key={i} className="flex items-center text-sm text-brand-white/60">
-                        <span className="w-1.5 h-1.5 bg-brand-gold rounded-full mr-2"></span>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
+                <div className="px-6 pb-6 pt-2 border-t border-brand-gold/10">
+                  <Link
+                    href={service.link}
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-brand-gold hover:text-yellow-400 group-hover:translate-x-1 transition-all"
+                  >
+                    Jetzt anfragen <span>→</span>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -141,20 +176,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Story Section */}
-
-
       {/* Werte Section */}
-      <section className="py-10 bg-brand-black border-t border-brand-gold/20">
-
+      <section className="py-12 bg-brand-black border-t border-brand-gold/20">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-brand-white text-center mb-12">
             Unsere <span className="text-brand-gold">Werte</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-            <div className="bg-brand-black rounded-xl p-8 text-center group transition-colors duration-300">
+            <div className="bg-brand-black rounded-xl p-8 text-center group transition-colors duration-300 border border-brand-gold/10 hover:border-brand-gold/30">
               <div className="text-5xl mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">💪</div>
               <h3 className="text-xl font-bold text-brand-white mb-2">Zuverlässigkeit</h3>
               <p className="text-brand-white/70">
@@ -162,7 +192,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-brand-black rounded-xl p-8 text-center group transition-colors duration-300">
+            <div className="bg-brand-black rounded-xl p-8 text-center group transition-colors duration-300 border border-brand-gold/10 hover:border-brand-gold/30">
               <div className="text-5xl mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">🤝</div>
               <h3 className="text-xl font-bold text-brand-white mb-2">Ehrlichkeit</h3>
               <p className="text-brand-white/70">
@@ -170,23 +200,19 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-brand-black rounded-xl p-8 text-center group transition-colors duration-300">
+            <div className="bg-brand-black rounded-xl p-8 text-center group transition-colors duration-300 border border-brand-gold/10 hover:border-brand-gold/30">
               <div className="text-5xl mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">⭐</div>
               <h3 className="text-xl font-bold text-brand-white mb-2">Qualität</h3>
               <p className="text-brand-white/70">
                 Wir arbeiten gründlich und hinterlassen nur zufriedene Kunden.
               </p>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* Warum wir Section */}
-
-
       {/* CTA Section */}
-      <section className="py-10 bg-brand-black border-t border-brand-gold/20">
+      <section className="py-16 bg-brand-black border-t border-brand-gold/20">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-brand-white mb-6">
             Bereit für ein <span className="text-brand-gold">glänzendes</span> Ergebnis?
@@ -210,7 +236,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
     </>
   );
 }
