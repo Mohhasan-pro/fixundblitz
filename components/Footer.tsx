@@ -14,9 +14,9 @@ export default function Footer() {
             <Image
               src="/images/2.svg"
               alt="FIX & BLITZ Logo"
-              width={450}
-              height={570}
-              className="h-30 w-auto mb-4"
+              width={285}
+              height={105}
+              className="h-14 w-auto mb-4"
             />
             <p className="text-brand-white/70 text-sm mb-6">
               Ihr zuverlässiger Partner für Gartenpflege, Reinigung, Transport und Entrümpelung in Osnabrück.

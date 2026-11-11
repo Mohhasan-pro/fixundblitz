@@ -22,15 +22,15 @@ export default function Navigation() {
   return (
     <nav className="bg-brand-black border-b border-brand-gold/20 fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between items-center h-28">
+        <div className="flex justify-between items-center h-20">
 
           <Link href="/">
             <Image
               src="/images/2.svg"
               alt="FIX & BLITZ Logo"
-              width={450}
-              height={570}
-              className="h-24 w-auto"
+              width={285}
+              height={105}
+              className="h-12 w-auto" priority
             />
           </Link>
 
