@@ -72,7 +72,7 @@ export default function Kontakt() {
 
                         {/* Standort & Einsatzgebiet Info */}
                         <div className="bg-brand-black/50 p-6 rounded-xl border border-brand-white/10 text-brand-white/70 text-sm space-y-2">
-                            <p><strong className="text-brand-white">Standort:</strong> Ruwestr. 2, 49084 Osnabrück</p>
+                        
                             <p><strong className="text-brand-white">Einsatzgebiet:</strong> Osnabrück und Umgebung (bis zu 50 km Umkreis)</p>
                             <p><strong className="text-brand-white">E-Mail:</strong> info@fixundblitz.de</p>
                         </div>
